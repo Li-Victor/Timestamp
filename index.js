@@ -6,9 +6,14 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+//middleware for static pages
+app.use('/', express.static(__dirname + '/public'));
+
+//send index.html
 app.get('/', function (req, res, next) {
-    res.status(200).send('this would be the homepage');
-})
+    res.sendFile(__dirname + '/public/index.html');
+});
+
 app.get('/:date', dateController.getDate);
 
 
