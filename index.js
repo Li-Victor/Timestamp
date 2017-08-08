@@ -14,6 +14,7 @@ app.get('/', function (req, res, next) {
     res.sendFile(__dirname + '/public/index.html');
 });
 
+app.get('/now', dateController.getNow);
 app.get('/:date', dateController.getDate);
 
 
