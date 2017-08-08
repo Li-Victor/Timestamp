@@ -1,29 +1,25 @@
 {
   "name": "timestamp-microservice",
-  "version": "1.0.0",
-  "description": "A timestamp Microservice",
+  "version": "0.0.1",
+  "description": "Timestamp Microservice project From FreeCodeCamp",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "mocha"
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3",
+    "body-parser": "^1.17.2"
+  },
+  "engines": {
+    "node": "8.x"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Li-Victor/Timestamp-Microservice.git"
+    "url": "https://glitch.com/edit/#!/welcome-project"
   },
-  "author": "Victor Li",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Li-Victor/Timestamp-Microservice/issues"
-  },
-  "homepage": "https://github.com/Li-Victor/Timestamp-Microservice#readme",
-  "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3"
-  },
-  "devDependencies": {
-    "chai": "^4.1.1",
-    "mocha": "^3.5.0",
-    "nodemon": "^1.11.0"
-  }
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
 }
