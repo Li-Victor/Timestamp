@@ -7,6 +7,34 @@
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <h1>Timestamp Microservice</h1>
+
+        <div class="container">
+            <h1>Timestamp Microservice</h1>
+            <ul>
+                <li>
+                    <p>Pass a <strong>unix timestamp</strong> or a <strong>natural language date</strong> as a parameter. </br>
+                        This will return a JSON object of both the Unix timestamp and the natural language form of that date. </br></p>
+                </li>
+
+                <li>
+                    <p>Pass <strong>now</strong> as a parameter. </br>
+                        This will return a JSON boject of both the Unix timestamp and the natural language date of the current time.</p>
+                </li>
+
+                <li>
+                    <p>Any other parameter will return a JSON object with value null for the unix and natural date properties </p>
+                </li>
+            </ul>
+
+            <h2>Example usage</h2>
+            <p>http://localhost:3000/August%2007,%202017</p>
+            <p>http://localhost:3000/August 07, 2017</p>
+            <p>http://localhost:3000/1502064000</p>
+            <p>http://localhost:3000/now</p>
+
+            <h2>Example output</h2>
+            <p>{"unix":1502064000,"natural":"August 7, 2017"}</p>
+        </div>
+
     </body>
 </html>
